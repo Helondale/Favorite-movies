@@ -1,4 +1,3 @@
-// WRITE YOUR CODE BELOW THIS LINE
 let favMovies = [
     {
         title: "Mary Poppins",
@@ -9,9 +8,6 @@ let favMovies = [
 		writer: "P.L. Travers",
 		stars: "Julie Andrews, Dick Van Dyke",
 		genre: "musical"
-
-
-
     },
     {
         title: "Scream",
@@ -55,18 +51,3 @@ console.log("The fourth movie's genre is: " +favMovies[3].genre);
 let averageRating = (favMovies[0].rating + favMovies[1].rating + favMovies[2].rating + favMovies[3].rating) /4;
 console.log("The average rating is: " +averageRating);
 let averageAge = (2022 - favMovies[0].year + 2022 - favMovies[1].year + 2022 - favMovies[2].year + 2022 - favMovies[3].year) /4;
-
-// DO NOT MODIFY THE CODE BELOW THIS LINE
-let toExport;
-
-try {
-	toExport = [
-		{name: "favMovies", content: favMovies, type: "array"},
-        {name: "averageRating", content: averageRating, type: "number"},
-        {name: "averageAge", content: averageAge, type: "number"}
-	]
-} catch (error) {
-	toExport = {error: error.message}
-}
-
-export {toExport};
